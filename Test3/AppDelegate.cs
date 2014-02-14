@@ -13,7 +13,7 @@ namespace Test3
     public partial class AppDelegate : UIApplicationDelegate
     {
         // class-level declarations
-        UIWindow window;
+		public static UIWindow window;
 		public static UIStoryboard Storyboard = UIStoryboard.FromName ("Main", null);
 		public static UIViewController initialViewController;
 

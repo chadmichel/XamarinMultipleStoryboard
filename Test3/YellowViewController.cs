@@ -28,8 +28,7 @@ namespace Test3
 			base.ViewDidLoad ();
 
 			this.SwitchButton.TouchUpInside += (o, e) => {
-				//this.NavigationController.PushViewController(yellowViewController, true);
-				this.NavigationController.PushViewController(otherViewController, true);
+				NavigationController.PushViewController(otherViewController, true);
 			};
 		}
 	}
