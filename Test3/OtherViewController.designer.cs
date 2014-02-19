@@ -12,9 +12,23 @@ namespace Test3
 	[Register ("OtherViewController")]
 	partial class OtherViewController
 	{
+		[Outlet]
+		MonoTouch.UIKit.UIButton btnGo { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UILabel btnHi { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (btnHi != null) {
+				btnHi.Dispose ();
+				btnHi = null;
+			}
+
+			if (btnGo != null) {
+				btnGo.Dispose ();
+				btnGo = null;
+			}
 		}
 	}
 }

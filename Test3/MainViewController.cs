@@ -19,19 +19,12 @@ namespace Test3
 
 		public void Initialize()
 		{
-			var myStoryboard = AppDelegate.Storyboard;
-			//yellowViewController = myStoryboard.InstantiateViewController ("YellowViewController") as YellowViewController;
-			//otherViewController = AppDelegate.OtherStoryboard.InstantiateViewController ("OtherViewController") as OtherViewController;
+			var myStoryboard = AppDelegate.Storyboard;		
 		}
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-
-			//yellowButton.TouchUpInside += (o, e) => {
-				//this.NavigationController.PushViewController(yellowViewController, true);
-			//	this.NavigationController.PushViewController(otherViewController, true);
-			//};
-		}
+        }
 	}
 }

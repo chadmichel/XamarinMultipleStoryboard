@@ -12,5 +12,15 @@ namespace Test3
 		public OtherViewController (IntPtr handle) : base (handle)
 		{
 		}
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+
+            btnGo.TouchUpInside += (object sender, EventArgs e) => 
+            {
+                DismissViewController(true, null);
+            };
+        }
 	}
 }

@@ -18,8 +18,7 @@ namespace Test3
 
 		public void Initialize()
 		{
-			var myStoryboard = AppDelegate.Storyboard;
-			//yellowViewController = myStoryboard.InstantiateViewController("YellowViewController") as YellowViewController;
+			var myStoryboard = AppDelegate.Storyboard;			
 			otherViewController = AppDelegate.OtherStoryboard.InstantiateViewController("OtherViewController") as OtherViewController;
 		}
 
@@ -28,7 +27,7 @@ namespace Test3
 			base.ViewDidLoad ();
 
 			this.SwitchButton.TouchUpInside += (o, e) => {
-				NavigationController.PushViewController(otherViewController, true);
+                PresentViewController(otherViewController, true, null);
 			};
 		}
 	}
